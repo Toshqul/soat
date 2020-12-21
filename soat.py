@@ -14,8 +14,8 @@ while True:
     x = datetime.datetime.now(tz=ok)
     x = x.strftime("%H:%M")
     app.send(functions.account.UpdateProfile(
-    first_name="  " +str(x),
-    about="O'zbekistonda soat: " +str(x)
+    first_name="Dustbekov" +str(x),
+    about="O'zbekistonda soat: " +str(x)
     ))
     photos = app.get_profile_photos("me")
     app.delete_profile_photos(photos[0].file_id)
